@@ -25,13 +25,13 @@ public class ThreadCounterWithFunctionalInterface {
         Thread t1 = new Thread(() -> {
             for(int i =0; i < 5; i++){
                 p.setV(p.getV()+1);
-                System.out.println(p.getV());
+                System.out.println(p.getV()+" t1");
             }
         });
         Thread t2 = new Thread(() -> {
             for(int i =0; i < 5; i++){
                 p.setV(p.getV()+1);
-                System.out.println(p.getV());
+                System.out.println(p.getV()+" t2");
             }
         });
 
