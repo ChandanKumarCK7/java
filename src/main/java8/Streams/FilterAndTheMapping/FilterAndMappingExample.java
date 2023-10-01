@@ -4,6 +4,7 @@ package Streams.FilterAndTheMapping;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 // sample pojo
@@ -34,8 +35,11 @@ class Person{
 }
 public class FilterAndMappingExample {
     public static void main(String[] args){
+
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 2);
         List<String> strings = Arrays.asList("alph", "beta", "uuuuuu", "sooooooo","so");
+
+        List<String> strings1 = Arrays.asList("alph", "beta", "uuuuuu", "sooooooo","yo");
 
 
 
@@ -93,6 +97,15 @@ public class FilterAndMappingExample {
             }
         };
         System.out.println(strings.stream().collect(Collectors.toMap(f, f1)));
+
+        // •	Merge two lists of strings into one sorted list without duplicates.
+
+        System.out.println(Stream.concat(strings.stream(), strings1.stream()).distinct().collect(Collectors.toList()));
+
+        // or
+
+        System.out.println(Stream.concat(strings.stream(), strings1.stream()).collect(Collectors.toSet()));
+
 
 
 
