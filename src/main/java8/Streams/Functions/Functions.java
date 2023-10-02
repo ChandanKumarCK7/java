@@ -1,4 +1,4 @@
-package Functions;
+package Streams.Functions;
 
 
 import java.util.Arrays;
