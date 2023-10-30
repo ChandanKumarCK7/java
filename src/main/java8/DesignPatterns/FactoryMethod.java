@@ -13,6 +13,7 @@ package DesignPatterns;
 
 
 
+
 // single object Vehicle
 interface Vehicle{
     public int getCost();
@@ -21,7 +22,7 @@ interface Vehicle{
 class Car implements Vehicle{
     int cost = 50;
     public Car(){
-        this.cost = cost;
+
     }
 
     public int getCost(){
@@ -31,7 +32,7 @@ class Car implements Vehicle{
 class Bike implements Vehicle{
     int cost = 50;
     public Bike(){
-        this.cost = cost;
+
     }
 
     public int getCost(){

@@ -75,13 +75,13 @@ public class FilterAndMappingExample {
         // Given a list of strings, map each string to its length and return a list of integers representing the lengths.
 
         HashMap<String, Integer> h = new HashMap<>();
-        strings.stream().forEach(s -> h.put(s, s.length()));
+        strings.stream().forEach(s    ->  h.put(s, s.length()));
 
         System.out.println(h);
 
         // or
 
-        System.out.println(strings.stream().collect(Collectors.toMap(s -> s, s -> s.length())));
+        System.out.println(strings.stream().collect(Collectors.toMap(s        -> s, s -> s.length())));
 
         // or
         Function<String, String> f = new Function<String, String>() {

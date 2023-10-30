@@ -1,9 +1,7 @@
-package Streams.Partition;
+package Streams.Others.Partition;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,6 +12,8 @@ public class PartitionExample {
 
         // •	Partition a list of numbers into even and odd numbers using partitioningBy.
         System.out.println(numbers.stream().collect(Collectors.partitioningBy(n -> n%2 == 0)));
+
+
 
     }
 

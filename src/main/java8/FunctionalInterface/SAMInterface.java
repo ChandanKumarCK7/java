@@ -18,7 +18,7 @@ public class SAMInterface {
 
         // Sample Example to Create a SAMInterface and then call it's abstract method using lambda
 
-        Functional f = (a, b) -> a * b;
+        Functional f = ((a, b) -> a * b);
         System.out.println(f.multiply(6, 7));
 
 

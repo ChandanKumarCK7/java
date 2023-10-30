@@ -1,10 +1,21 @@
 package Streams;
 
 
+
+
+
+
 import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
+class ComparatorImpl implements Comparator<String>{
+
+    @Override
+    public int compare(String o1, String o2) {
+        return Integer.compare(o1.length(), o2.length());
+    }
+}
 public class StringOperations {
     public static void main(String[] args){
         String s = "abujyvh";
@@ -20,13 +31,14 @@ public class StringOperations {
             char[] c = st.toCharArray();
             Arrays.sort(c);
             return new String(c);
-        })).entrySet().stream()
-                .filter(e -> e.getValue().size() > 1).map(e -> e.getValue()).collect(Collectors.toList()));
+        })).entrySet().stream().filter(e -> e.getValue().size() > 1).collect(Collectors.toSet()));
 
         // Generate all permutations of a given string and collect them into a list using Streams.
 
 
         // sort list of multiple strings with length
+        Comparator co = new ComparatorImpl();
+        System.out.println(strings.stream().sorted(co).collect(Collectors.toList()));
         System.out.println(strings.stream().sorted((o1, o2) -> Integer.compare(o1.length(), o2.length())).collect(Collectors.toList()));
 
 
@@ -49,6 +61,27 @@ public class StringOperations {
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.toMap(c -> c, c -> 1, Integer::sum, LinkedHashMap::new)).entrySet()
                 .stream().filter(e -> e.getValue() == 1).limit(1).collect(Collectors.toList()).get(0).getKey());
+
+        // Joining Strings: Given a List of strings, join them into a single comma-separated string using streams.
+
+        StringBuilder s1 = new StringBuilder("");
+        strings.stream().forEach(st1 -> {
+            s1.append(st1).append(",");
+        });
+        System.out.println(s1.substring(0, s1.length() - 2));
+
+        // or
+
+        System.out.println(strings.stream().collect(Collectors.joining(",")));
+
+        // remove duplicate character of a string
+        String string = "alpha";
+
+        LinkedHashSet<Character> uniqueChars = string.chars().mapToObj(c-> (char) c).collect(Collectors.toCollection(LinkedHashSet::new));
+        System.out.println(uniqueChars);
+
+        System.out.println(string.chars().mapToObj(c-> (char) c).collect(Collectors.toMap(c-> c, c->1, Integer::sum, LinkedHashMap::new))
+                .entrySet().stream().map(e -> e.getKey()).collect(Collectors.toList ()));
 
 
 

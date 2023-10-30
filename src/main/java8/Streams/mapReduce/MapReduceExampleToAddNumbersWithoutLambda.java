@@ -29,7 +29,17 @@ public class MapReduceExampleToAddNumbersWithoutLambda {
             }
         };
 
-        System.out.println(a.stream().map(f).reduce(0, b));
+        // use map or reduce to print sum of elements in arraylist
+
+
+
+        System.out.println(a.stream().reduce(b).get().doubleValue() );
+        System.out.println(a.stream().reduce(0, b) );
+
+        // use map or reduce to map double each value then print sum of elements
+        System.out.println(a.stream().map(f).reduce(b).get().doubleValue());
+        System.out.println(a.stream().map(f).reduce(0,b));
+
 
         // below is the program to find first non repetitive character using streams
         String s = "chandan";

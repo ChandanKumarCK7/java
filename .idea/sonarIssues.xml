@@ -13,6 +13,226 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/AbstractFactoryPattern.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/BuilderDesign.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/FactoryMethod.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/FactoryPattern.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/ObjectPool.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/Prototype.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/Singleton.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/BiConsumerExampleWithLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/BiConsumerExampleWithoutLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Consumer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Consumer/BiConsumerExampleWithLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Consumer/BiConsumerExampleWithoutLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Consumer/ConsumerExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Consumer/ConsumerExampleWithLambdaExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExampleWithLambdaExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Function/FunctionExampleWithLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Function/FunctionExampleWithoutLamda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Predicate/PredicateWithALambdaExpressionExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Predicate/PredicateWithoutALambdaExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/SAMInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Streams/StreamsExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Supplier/SupplierWithoutALambdaExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ThreadCounterWithFunctionalInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Functions/Functions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/FilterAndTheMapping/FilterAndMappingExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/FlatMap/FlatMapOfExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/Functions/Functions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/Others/GroupingBy/GroupingBy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/Others/Partition/PartitionExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/Partition/PartitionExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/StringOperations.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Streams/mapReduce/MapReduceExampleToAddNumbersWithoutLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/mapReduce/MapReduceExampleToAddNumbersWithoutLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring/example7/src/main/java/com/example/main/Example7.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/practice/DependancyInjection.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/practice/Meanings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/practice/Meanings.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/practice/WithoutDependancyInjection.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/practice/temp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/SpringbootExercises/src/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/serverapp/src/main/java/com/lucent/oms/cgw/XOS/reqrsp/XOS_getTP.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/serverapp/src/main/java/com/lucent/oms/cgw/common/GlobalDataMgr.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/web-map/map-service-impl/src/main/java/com/alcatel_lucent/oms1350/impl/map/OmsMapServiceDataMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
