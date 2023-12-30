@@ -83,6 +83,12 @@ public class FilterAndMappingExample {
 
         System.out.println(strings.stream().collect(Collectors.toMap(s        -> s, s -> s.length())));
 
+
+
+
+
+
+
         // or
         Function<String, String> f = new Function<String, String>() {
             @Override
