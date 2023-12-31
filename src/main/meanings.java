@@ -48,8 +48,7 @@ what is the wait method used for
 wait method will make sure that current thread will be put into waiting stake until other thread will coplete its task and triggers notify
 
 locks are used in a multithreaded environment to prevent deadlocks in java
-ReadWriteLock will make sure that when a thread acquires write lock on a resource then all other threads that access the
-same resource can neither read nor write.
+ReadLock will make sure that when a thread acquires write lock on a resource then all other threads that access to only read but cant write
 
 reentrantlock will make sure that when one thread acquires lock then until that thread will unlock no other thread can access
 resource
@@ -129,7 +128,14 @@ stringbuilder?
 yeah there wont be performance drop to access that object because only in case of multiple threads there
 will be drop of performance on that stringbuffer object to provide synchronization
 
+Q- usually as part of marker interface there will be no methods or variables then what is the purpose of that
 
+Q- so how to achieve concurreny?
+1- synchronization with the synchronized keyword on method or synchronized block
+-    locks in the concurrent package also help to achieve concurrency
+
+tell the particular like ways to talk to relational databases in java
+hibernate, jpa really just like two main ways to communicate to relational databases.
 
 
 
