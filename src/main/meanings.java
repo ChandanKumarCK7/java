@@ -31,8 +31,19 @@ modularized or changed in future without causing major issues or code revamps
     so waht exactly will happen then is that if new shapr will be introduced we can create new class of that shape and implement
     rather than modifying the CalculateArea class that will be overloaded with multiple shape logic
 
-l
+    3- Liskov Substitution Principle LSP
+    that says that if you have a subclass that is derived from a superclass then that subclass should be able to accept
 
+    4- interface segregation -
+    make sure that an interface supports has only one purpose meaning try to split interface as much as possible
+        else the classes that implement have to provide implementation to all of them
+
+    5- Dependency Inversion
+        that makes sure that a higherLevel class wont be dependent on lower level class only
+        ex - PricePlan is a concrete class that has an attribute DiscountCalculator;
+
+        make sure that the member variable discountCalculator will be either an interface or abstract class
+        because high level of concrete classes should depend on abstract class or interface not on concrete class
 
 
 what are the thread lifecycles -
