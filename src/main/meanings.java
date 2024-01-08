@@ -148,6 +148,54 @@ Q- so how to achieve concurreny?
 tell the particular like ways to talk to relational databases in java
 hibernate, jpa really just like two main ways to communicate to relational databases.
 
+Q- explain about equals method
+    usually that just compares memory address of the object for any custom class object, where as when comparing string
+    that compares the equality of string irrespective of memory address of the objects
+
+    we need not override equals method but we have to override for custom comparision.
+
+example -
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (obj == null || getClass() != obj.getClass()) return false;
+            Person person = (Person) obj;
+            return Objects.equals(name, person.name) &&
+            Objects.equals(address, person.address);
+        }
+
+Q- what is the difference between compareTo and compare method
+    compareTo is part of the comparable interface where was compare is part of the comparator interface.classes
+    that implement those interfaces will have these methods by default
+
+    compareTo compares the current object with the specified object
+    compare compares the first object in parameter with the second object passed in parameter
+
+Q- so why exactly is it import to override hashcode when equals is overriden
+    usually hashCode() not implemented same across all platforms and it can be independant
+
+    and also one thing that has to be taken caare is lets say there is a pojo Person that has equals() overiden not hashCode()
+    then person1 and person8 are stored on two different locations
+
+            person1 p1 = new Person("name1");
+            person8 p8 = new Person("name1");
+
+            hashmap.put(p1);
+            hashmap.put(p8);
+
+        then if the equals() will be overriden based on name then it returns true
+        but hashCode() will be based on memory locations and here we have used new Operator so memory locations differ
+
+        then hashCode() will be different and that breaks the contract of equals() and hashCode() aggrement.class
+
+    hence always rcomended to overide hashCode() when equals() will be overriden and provide implementation of hashCode()
+    not based on memory location but based on an attribute
+
+Q- explain about the heap and stack memory
+    heap memory usually contains objects that are common to all of threads such as collection objects and stack memory on other hand
+    contains data such as threads local variables present in the run() associated to each thread
+
 
 
 
