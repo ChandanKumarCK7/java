@@ -265,4 +265,4 @@ Q- so when to just use record instead of pojo?
 Q- both the methds strip and trim will be used to just remove spaces know so what is difference?
     strip will help to remove spaces that are in unicode format also, trim doesnt support that
 
-    strip has been introduced in the java 11 and is more powerful in stripping.
+    strip has been introduced in the java 11 and is more powerful in stripping. 7
