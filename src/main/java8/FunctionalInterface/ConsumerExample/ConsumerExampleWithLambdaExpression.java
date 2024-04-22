@@ -1,11 +1,14 @@
-package FunctionalInterface.Consumer;
+package FunctionalInterface.ConsumerExample;
 
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Consumer;
 
 public class ConsumerExampleWithLambdaExpression {
+
 
 
         public static void main(String[] args){
@@ -25,6 +28,11 @@ public class ConsumerExampleWithLambdaExpression {
             };
 
             l.forEach(c1);
+
+            LinkedHashSet<Integer> li = new LinkedHashSet<>();
+            li.add(8);
+            li.add(8);
+            System.out.println(li);
 
         }
 

@@ -1,6 +1,14 @@
 package FunctionalInterface.Function;
 
 
+
+
+
+
+
+
+
+
 import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -27,6 +35,13 @@ public class FunctionExampleWithLambda {
         list.add("Date");
         ArrayList<String> copyLi = new ArrayList<>(list);
         Function<String,Integer> f1 = (String s) -> s.length();
+
+
+
+
+
+
+
         list = list.stream().sorted(Comparator.comparing(f1)).collect(Collectors.toList());
 
         System.out.println("Filtered list: " + list+" normal list "+copyLi);

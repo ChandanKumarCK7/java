@@ -8,7 +8,92 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/Routing/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/PracticeLld/Lift.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/PracticeLld/LiftExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/SystemDesign/Cache.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/SystemDesign/DynamicCache/DynamicCache.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/SystemDesign/MovieTicket.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../System-Design/src/main/java8/meanings1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Optimal/File.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Optimal/File1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Optimal/File11.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Optimal/GeographicalSort.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Optimal/LinkedList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/ComparableVsTheComparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DataStructures/HashMapWithOtherDataStructures.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DataStructures/hash.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/DeepCopy.java">
           <value>
             <set />
           </value>
@@ -44,6 +129,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/DesignPatterns/Singleton.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Exercises.java">
           <value>
             <set />
           </value>
@@ -88,6 +178,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExample/BiConsumerExampleWithLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExample/BiConsumerExampleWithoutLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExample/ConsumerExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ConsumerExampleWithLambdaExpression.java">
           <value>
             <set />
@@ -103,12 +208,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/MultiThreadingExercises.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Predicate/PredicateWithALambdaExpressionExample.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/Predicate/PredicateWithoutALambdaExpression.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ProducerConsumer.java">
           <value>
             <set />
           </value>
@@ -133,7 +248,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/FunctionalInterface/ThreadCounterWithFunctionalInterfaceAndWithoutFunctionalInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/Functions/Functions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/MultiThreadingExercises.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Serialization.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/ShallowCopy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/ShallowCopyAndDeepCopy.java">
           <value>
             <set />
           </value>
@@ -178,12 +318,117 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/System Design/ConsistentHashingOfSystemDesign.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/SystemDesign/ConsistentHashingOfSystemDesign.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Threads.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Threads/Locks.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Threads/MyCallable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Threads/ThreadsExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/Threads/temp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/ThreadsExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/KmlPoint.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/MultiGeometrySegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/RouteSegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/StartingCoordinateOfKml.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/WebmapTest/backup.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java8/mapReduce/MapReduceExampleToAddNumbersWithoutLambda.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/meanings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java8/meanings1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/meanings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/sqlmeanings.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../joi-energy-java-updated-version/src/main/java/uk/tw/energy/domain/MeterReadings.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../joi-energy-java-updated-version/src/main/java/uk/tw/energy/domain/PricePlan.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../spring/example7/src/main/java/com/example/main/Example7.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/Meanings.txt">
           <value>
             <set />
           </value>
@@ -218,6 +463,121 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/com/WebmapTest/MultiGeometrySegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/WebmapTest/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/WebmapTest/MultiGeometrySegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/WebmapTest/RouteSegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/WebmapTest/StartingCoordinateOfKml.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/com/WebmapTest/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot/WebmapTest/src/main/java/com/WebmapTest/MultiGeometrySegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../weather-dashboard/Java_Microservice/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../weather-dashboard/Java_Microservice/src/main/java/com/Consumers/RabbitMQConsumer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../weather-dashboard/Java_Microservice/src/main/java/com/Model/CityTemperature.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-controllers/src/main/java/com/nokia/nfmt/wdm/webserver/controllers/connectionMgmt/OtnAsonPhysicalConnController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/provisioning/delegator/helper/RequestAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/KmlMapUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/KmlPoint.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/KmlPoints.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/MultiGeometrySegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/OtnAsonConnectionServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/RouteSegment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-wdm/src/main/java/com/nokia/nfmt/wdm/connection/services/StartingCoordinateOfKml.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/otn-ws/otn-ws-webapp/src/main/webapp/otnWeb/resources/nls/otn_i18nStrings.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/OTN/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/git/OTN/serverapp/src/main/java/com/lucent/oms/cgw/XOS/reqrsp/XOS_getTP.java">
           <value>
             <set />
@@ -229,6 +589,21 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/git/web-map/map-service-impl/src/main/java/com/alcatel_lucent/oms1350/impl/map/OmsMapServiceDataMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/web-map/map-service-test/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/web-map/map-ws/src/main/java/com/alcatel_lucent/networks/map/controller/MapServiceController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/git/web-map/pom.xml">
           <value>
             <set />
           </value>

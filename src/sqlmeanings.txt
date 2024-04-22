@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+Q- RANK() function -
+    that function will generally be making like a hashmap with key being the column names we provide and returns rank for each row
+
+    query - select nc.connectionid, RANK() over (order by nc.connectionid desc ) as ranking from networkconnection nc;
+
+Q- Union operator -
+    union will just fetch all rows from both tables and makes sure there are no duplicate rows
+

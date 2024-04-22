@@ -3,56 +3,49 @@ package Threads;
 
 class Counter{
 
-
     private int v;
+    private static Counter counter;
 
     public Counter(int v){
         this.v = v;
     }
 
-    public void setter(){
+    public synchronized void setter(){
         v= v+1;
     }
 
-    public int getV(){
+    public synchronized int getV(){
         return v;
     }
 
+    public static Counter getInstance(){
+        if (counter == null){
+            counter = new Counter(0);
+            return counter;
+        }
+        return counter;
+    }
 }
 
+class RunnableImpl implements Runnable{
+    Counter c = Counter.getInstance();
+
+    public void run() {
+        int i =0;
+            while(c.getV()<=10){
+                System.out.println("called by "+Thread.currentThread().getName()+" with the value as "+c.getV());
+                c.setter();
+            }
+
+    }
+}
 public class ThreadsExample {
     public static void main(String[] args){
 
-        Counter c =new Counter(0);
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                int i =0;
-                synchronized (c){
-                    while(c.getV()<=10){
-                        System.out.println("called by "+Thread.currentThread().getName()+" with the value as "+c.getV());
-                        c.setter();
-                    }
-
-                }
 
 
-            }
-        }).start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                int i =0;
-                synchronized (c){
-                    while(c.getV()<=10){
-                        System.out.println("called by "+Thread.currentThread().getName()+" with the value as "+c.getV());
-                        c.setter();
-                    }
-
-                }
-            }
-        }).start();
+        new Thread(new RunnableImpl()).start();
+        new Thread(new RunnableImpl()).start();
 
 
 

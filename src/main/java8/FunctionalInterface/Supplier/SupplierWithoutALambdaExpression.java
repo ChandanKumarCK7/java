@@ -1,6 +1,10 @@
 package FunctionalInterface.Supplier;
 
 
+
+
+
+
 import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.function.Supplier;

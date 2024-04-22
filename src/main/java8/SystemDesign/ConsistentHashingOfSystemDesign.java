@@ -36,11 +36,11 @@ class ConsistentHashingOfSystemDesign{
         List<Node1> nodes = new ArrayList(Arrays.asList(n1, n8, n10, n16));
 
         for(Node1 n : nodes){
-            long h = n.getName().hashCode();
+            long h = n.getName().hashCode() % 10000;
             hashCircle.put(h, n);
         }
 
-        String r1 = "request";
+        String r1 = "request1";
         String r8 = "request2";
 
         hashCircle.forEach((k, v) -> System.out.println(k+" "+v.getName() )) ;
@@ -53,7 +53,7 @@ class ConsistentHashingOfSystemDesign{
         long m=Long.MAX_VALUE;
         String nodeName = "";
 
-        long rH = r.hashCode();
+        long rH = r.hashCode() % 10000;
         System.out.println(rH);
         for(Map.Entry<Long, Node1> e : hashCircle.entrySet()){
             long tM = m;

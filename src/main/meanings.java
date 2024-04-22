@@ -40,13 +40,25 @@ modularized or changed in future without causing major issues or code revamps
 
     5- Dependency Inversion
         that makes sure that a higherLevel class wont be dependent on lower level class only
-        ex - PricePlan is a concrete class that has an attribute DiscountCalculator;
+        ex - // Abstraction (Engine interface)
+            interface Engine {
+                void start();
+            }
 
-        make sure that the member variable discountCalculator will be either an interface or abstract class
-        because high level of concrete classes should depend on abstract class or interface not on concrete class
+            // Low-level module implementing the abstraction
+            class GasolineEngine implements Engine {
+                public void start() {
+                    System.out.println("Gasoline engine started");
+                }
+            }
+
+        so here if Engine was concrete class then you have to write completely new code if u want new engine type
+        but if there will be interface or abstract class as Engine then u can revamp to some other type of engine without
+        affecting car.
 
 
-what are the thread lifecycles -
+
+    what are the thread lifecycles -
     new - whenever a thread will be created that will be in new state though execution hasnt started yet // Thread t = new Thread();
     active - whenever a thread will be started it will be in active, There are two types
         Runnable - a thread that will be ready to run is in Runnable state
@@ -196,12 +208,61 @@ Q- explain about the heap and stack memory
     heap memory usually contains objects that are common to all of threads such as collection objects and stack memory on other hand
     contains data such as threads local variables present in the run() associated to each thread
 
+Q- what is the purpose of having constructor in the abstract class if abstract class cant be instantiated
+    an abstract class can be part of inheritance and when that happens the child class may use super() keyword to initialize
+    fields in the super class or the abstract class and to not have compile time errors we have to have constructor
+    in the abstract class also
 
+Q- so why has insatantiation been removed for abstract class
+    because an abstract class will be having abstract methods and it makes no sense to have an object that can call
+    abstract methods because there wont be implementation
 
+Q- so can an abstract class implement interface
+   if an interface will be implemented by abstract class then that abstract class need not provide implementation to
+   all of the abstract methods though the concrete subclasses of abstract class have to provide
 
+Q- can an abstract class have static methods, if so then why ?
+    yeah the abstract classes can have static methods and one of the reasons is to
+    explicitly say that u dont want subclasses to override and you want to associate a method to class rather than to object.class
 
+Q- what is an race condition and when that can occur?
+        so race condition means the expected output of an operation will be not equal to actual output because the operation will involve multiple threads accessing a resource and if some thread
+        modifies data before another thread though not supposed to then race condition
 
+    that happens whenever order of execution of threads varies in runtime and when there wont be proper synchronization.
 
+Q- what is the difference between run() method and the call() method?
+    run method wont return any value after thread completes execution
+    call method on other hand will return a value after execution
 
+Q- so can you just stop a thread in action?
+    there is no method that helps to stop a particular thread at runtime
+    though if the boolean variable can be used to place entire run() method code in that then
 
+    during the iteration we can dynamically make stop
 
+Q- so how to share data between threads?
+    use a blockingqueue that helps to be common among multiple threads
+
+Q- explain about the example blockingqueue
+    blockingqueuue is a data structure that is a queue that is synchronized and provides shared access
+    between threads
+
+Q- explain about the Future interface
+    Future interface can be used to perform two tasks -
+    to mintor the status of thread execution task
+    and another would be to store any value returned by a call() method
+
+Q- so why to prefer inner classes instead of creating same class in same package?
+    to access any of private methods of outside class and to tightly associate that with outer class we go with inner classes
+
+Q- so when to just use record instead of pojo?
+    pojo will usually generate lots of boilerplate code such as equals() method, hashCode() and the toString() so these wont be
+    required to just store a record in db if situation says so
+
+    at that time we can use record that is better.
+
+Q- both the methds strip and trim will be used to just remove spaces know so what is difference?
+    strip will help to remove spaces that are in unicode format also, trim doesnt support that
+
+    strip has been introduced in the java 11 and is more powerful in stripping.

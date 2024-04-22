@@ -22,8 +22,25 @@ public class Prototype {
     public static void main (String[] args){
         PrototypePojo p = new PrototypePojo(5);
         System.out.println(p);
-        PrototypePojo p1 = p.getcopy();
+
+        PrototypePojo p1 = p;
         System.out.println(p1);
+
+        System.out.println(p==p1);
+        System.out.println(p.equals(p1));
+
+        p.v = 9;
+        System.out.println(p==p1);
+        System.out.println(p.equals(p1));
+        System.out.println(p+""+p1);
+
+
+
+        try{
+            return;
+        }finally{
+            System.out.println("here");
+        }
 
     }
 }
