@@ -5,7 +5,7 @@ package Leetcode;
 import java.util.*;
 
 
-public class TopologicalSort {
+public class TopologicalSortWithDFS {
 
     static int p = 0;
     static int[] output;
