@@ -266,3 +266,7 @@ Q- both the methds strip and trim will be used to just remove spaces know so wha
     strip will help to remove spaces that are in unicode format also, trim doesnt support that
 
     strip has been introduced in the java 11 and is more powerful in stripping. 7
+
+Q- Difference between the shallow copy and deep copy
+
+    https://akcoding.com/tricky-java-interview-questions-for-7-years-experience/#ib-toc-anchor-1
