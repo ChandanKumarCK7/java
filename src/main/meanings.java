@@ -14,6 +14,9 @@ a compareTo method in that class that implements Comparable and then we can just
 Comparator is used to sort elements in pojo explicitly meaning compareTo method wont be used but programmer has to define a compare()
 and that will be called Collection.sort(people, new ComparatorImpl());
 
+    natural ordering means ordering numerically, alphabetically (comparable)
+    custom ordering means ordering based on user defined sorting logic (comparator)
+
 Explain about the Solid Principles in java?
      Solid principles are considered as good practices of java programming that makes sure that code will be clean and easily
 modularized or changed in future without causing major issues or code revamps
@@ -25,21 +28,21 @@ modularized or changed in future without causing major issues or code revamps
     define downloadingReport() as part of another class such as ReportDownloader
 
     2- Open or Closed Principle OCP
-    that says only that when you want to calculateArea() of a rectangle then dont create a class to handle calculateArea(Rectangle rectangle)
+    that says only that when you want to calculateArea() of a rectangle then dont create a class to handle calculateArea(Shape shape)
         rather create just like interface(Shape) -----> class(Rectangle) that contains calculateArea()
 
     so waht exactly will happen then is that if new shapr will be introduced we can create new class of that shape and implement
     rather than modifying the CalculateArea class that will be overloaded with multiple shape logic
 
     3- Liskov Substitution Principle LSP
-    that says that if you have a subclass that is derived from a superclass then that subclass should be able to accept
+    that says that if you have a subclass that is derived from a superclass then in the futrue that subclass should be good enough to replace parent class
 
     4- interface segregation -
     make sure that an interface supports has only one purpose meaning try to split interface as much as possible
         else the classes that implement have to provide implementation to all of them
 
     5- Dependency Inversion
-        that makes sure that a higherLevel class wont be dependent on lower level class only
+        that makes sure that a higherLevel class wont be dependent on lower level class at all
         ex - // Abstraction (Engine interface)
             interface Engine {
                 void start();
@@ -266,3 +269,10 @@ Q- both the methds strip and trim will be used to just remove spaces know so wha
     strip will help to remove spaces that are in unicode format also, trim doesnt support that
 
     strip has been introduced in the java 11 and is more powerful in stripping. 7
+
+Q- what are the generics also why that is required
+    generics are just a small feature introduced as part of JAVA 7 afterwards
+    they help to create one class to support multiple types of data types
+
+    for ex - to just like create linkedlist or hashmap, we can use any data type
+        but to just write single piece of code to support all types we can use generics
