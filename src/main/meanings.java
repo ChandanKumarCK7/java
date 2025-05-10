@@ -276,3 +276,7 @@ Q- what are the generics also why that is required
 
     for ex - to just like create linkedlist or hashmap, we can use any data type
         but to just write single piece of code to support all types we can use generics
+
+Q- Difference between the shallow copy and deep copy
+
+    https://akcoding.com/tricky-java-interview-questions-for-7-years-experience/#ib-toc-anchor-1
