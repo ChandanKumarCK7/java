@@ -270,3 +270,6 @@ Q- both the methds strip and trim will be used to just remove spaces know so wha
 Q- Difference between the shallow copy and deep copy
 
     https://akcoding.com/tricky-java-interview-questions-for-7-years-experience/#ib-toc-anchor-1
+
+What is the purpose of volatile keyword
+   In Java, the volatile keyword is a modifier applicable to variables, ensuring visibility of changes across multiple threads. When a variable is declared as volatile, it indicates to the Java Virtual Machine (JVM) that its value may be modified by different threads concurrently. This prevents threads from caching the variable's value in their local memory and forces them to read from and write to main memory directly.
