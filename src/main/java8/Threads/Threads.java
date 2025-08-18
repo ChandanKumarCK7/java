@@ -55,7 +55,7 @@ public class Threads {
         public void run() {
             try {
                 // Sleep for 2 seconds to simulate some work being done
-                Thread.sleep(2000);
+                Thread.sleep(7000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

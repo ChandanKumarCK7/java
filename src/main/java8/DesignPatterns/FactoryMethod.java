@@ -56,7 +56,7 @@ class FactoryMethod {
 
 
 
-// Example 2
+// EXAMPLE 2
 
 
 

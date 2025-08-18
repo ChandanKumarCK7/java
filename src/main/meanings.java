@@ -280,3 +280,13 @@ Q- what are the generics also why that is required
 Q- Difference between the shallow copy and deep copy
 
     https://akcoding.com/tricky-java-interview-questions-for-7-years-experience/#ib-toc-anchor-1
+
+Q- does Arrays.sort(array, comparatorObject) usually be valid if array is of type int[]?
+    no it accepts only Integer[][] and int[][]
+
+    because CompareTo method required a non-primitive to be compared and when u have array  ont int[],
+u will be sorting based on integer values
+        such problem wont occur to int[][]
+
+    ❌ int[] + comparator → not allowed (elements are primitive)
+    ✅ Integer[], int[][] + comparator → allowed (elements are objects)

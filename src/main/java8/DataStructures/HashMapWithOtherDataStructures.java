@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Map;
 
 class CustomHashMap<K, V>{
-    private LinkedList<Entry<K, V>>[] buckets;
+    private LinkedList<Entry<K, V>> buckets [];
 
     static final int default_capacity = 5;
 
@@ -26,6 +26,7 @@ class CustomHashMap<K, V>{
 
     public void put(K k, V v){
         int hash = getHash(k);
+//        System.out.println(k+" "+hash);
         LinkedList<Entry<K, V>> bucket = buckets[hash];
         for(Entry<K,V> e : bucket){
             if(e.key.equals(k)){
@@ -82,6 +83,7 @@ class CustomHashMap<K, V>{
         for(LinkedList<Entry<K, V>> b: this.buckets){
             for(Entry<K, V> entry : b){
                 System.out.println(entry.getKey() +" "+entry.getValue());
+
             }
         }
     }

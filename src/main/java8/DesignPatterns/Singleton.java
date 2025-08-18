@@ -8,7 +8,7 @@ class SingletonPojo{
     private SingletonPojo(){ // private so that in some other files Singleton o = new Singleton() cant be used
     }
 
-    public static SingletonPojo getInstance(){
+    public static SingletonPojo getInstance(){ // static becaus, static methods belong to class hence we can call method without creating object
         if (singleton == null)
             singleton = new SingletonPojo();
         return singleton;
