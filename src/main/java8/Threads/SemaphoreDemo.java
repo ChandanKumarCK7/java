@@ -117,8 +117,8 @@ public class SemaphoreDemo
         mt2.start();
 
         // waiting for threads A and B 
-        mt1.join();
-        mt2.join();
+//        mt1.join();
+//        mt2.join();
 
         // count will always remain 0 after
         // both threads will complete their execution

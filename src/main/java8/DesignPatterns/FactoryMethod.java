@@ -30,7 +30,7 @@ class Car implements Vehicle{
     }
 }
 class Bike implements Vehicle{
-    int cost = 50;
+    int cost = 25;
     public Bike(){
 
     }

@@ -5,6 +5,9 @@ package DesignPatterns;
 
 
 // SortingContext.java
+// Difference between factory and strategy is that, the object creation is not predetermined and the way of creation is hidden
+// where as the strategy pattern can be used when u want to swap between certain behaviours, when a particular behaviour was already chosen to create object
+
 class SortingContext {
     private SortingStrategy sortingStrategy;
 

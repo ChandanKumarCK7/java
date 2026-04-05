@@ -1,11 +1,11 @@
 package FunctionalInterface.Streams;
 
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.BiPredicate;
+
 
 public class StreamsExample {
     public static void main(String[] args){

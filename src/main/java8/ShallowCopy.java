@@ -1,79 +1,34 @@
+import java.util.ArrayList;
+import java.util.List;
 
+class Person implements Cloneable {
+    String name;
+    List<String> hobbies;
 
-
-
-class Cloneable1{
-    int superV;
-
-    public Cloneable1(int superV) {
-        this.superV = superV;
+    Person(String name, List<String> hobbies) {
+        this.name = name;
+        this.hobbies = hobbies;
     }
 
-
-    public int getSuperV() {
-        return superV;
-    }
-
-    public void setSuperV(int superV) {
-        this.superV = superV;
-    }
-}
-class Personal implements Cloneable{
-
-
-    int v;
-    Cloneable1 cv;
-
-    public Cloneable1 getCv() {
-        return cv;
-    }
-
-    public void setCv(Cloneable1 cv) {
-        this.cv = cv;
-    }
-
-    public int getV() {
-        return v;
-    }
-
-    public void setV(int v) {
-        this.v = v;
-    }
-
-    public Personal(int v, Cloneable1 cv){
-        this.v = v;
-        this.cv = cv;
-    }
+    // Shallow copy using clone()
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone(); // copies field values as-is
     }
-
 }
 
-
-
-
-
-public class ShallowCopy{
+public class ShallowCopy {
     public static void main(String[] args) throws CloneNotSupportedException {
+        List<String> hobbies = new ArrayList<>(List.of("Reading", "Gaming"));
+        Person original = new Person("Alice", hobbies);
 
-        Personal p = new Personal(5, new Cloneable1(9));
-        Personal p1 = (Personal) p.clone();
+        Person shallowCopy = (Person) original.clone();
+        System.out.println(original == shallowCopy);
 
+        // Modifying nested object affects BOTH
+        shallowCopy.hobbies.add("Cooking");
 
-        System.out.println(p == p1);
-        p1.getCv().setSuperV(1);
-        System.out.println(p == p1);
-        System.out.println(p.getCv().getSuperV()+" "+p1.getCv().getSuperV());
-
-
-
-
-
-
-    }
-    public static void main(String[] args, String[] args1){
-
+        System.out.println(original.hobbies);   // [Reading, Gaming, Cooking] ← affected!
+        System.out.println(shallowCopy.hobbies); // [Reading, Gaming, Cooking]
     }
 }

@@ -283,3 +283,81 @@ Q- Difference between the shallow copy and deep copy
 
 What is the purpose of volatile keyword
    In Java, the volatile keyword is a modifier applicable to variables, ensuring visibility of changes across multiple threads. When a variable is declared as volatile, it indicates to the Java Virtual Machine (JVM) that its value may be modified by different threads concurrently. This prevents threads from caching the variable's value in their local memory and forces them to read from and write to main memory directly.
+
+Q-  What is CAS?
+    CAS = Compare-And-Swap → a low-level, atomic CPU instruction.
+    It works like this:
+    You expect a variable to have a certain value (expected).
+    You want to update it to a new value.
+    CAS checks:
+    If the variable still has the expected value, update it to the new one. ✅
+    If it has changed (another thread already updated it), do nothing ❌ and retry.
+    This ensures thread safety without locks.
+
+        🔹 Example with AtomicInteger
+
+    import java.util.concurrent.atomic.AtomicInteger;
+
+    public class CASDemo {
+        public static void main(String[] args) {
+            AtomicInteger count = new AtomicInteger(0);
+
+            // CAS: if current value == 0, set it to 5
+            boolean success = count.compareAndSet(0, 5);
+
+            System.out.println("Updated? " + success);   // true
+            System.out.println("Value: " + count.get()); // 5
+        }
+    }
+
+
+    compareAndSet(0, 5) → succeeds because current value = 0.
+
+    If another thread had already changed it to, say, 3, this CAS would fail.
+
+    🔹 Why is CAS Important?
+    Non-blocking: No thread gets locked; losers just retry.
+    Faster than synchronized locks in many-core systems. used in AtomicInteger, ConcurrentHashMap
+
+Q- Why Top level classes cant be private in java
+Private means "only accessible within the enclosing class."
+But a top-level class has no enclosing class — it exists at the package level. So what would "private" even mean for it?
+
+    best way to implement a private class if required
+    public class Container {
+        // This is truly private - only Container can use it
+        private static class HiddenClass {
+
+        }
+        public static void useHidden() {
+            HiddenClass hidden = new HiddenClass();
+        }
+    }
+    // Outside code cannot access HiddenClass at all
+
+Question: If you have 5 levels of nested objects and perform a shallow copy, what happens when you modify an object at the deepest level?
+Answer:In a shallow copy, all nested objects at every level share the same memory address. Only the top-level object is duplicated.
+Therefore, modifying an object at any nested level (including the deepest level) will affect both the original and the copy.
+
+Question- What happends when a TreeMap that uses POJO - TreeMap<Person, Integer> uses POJO in such a way that
+POJO doesnt implement comparable or use comparator object?
+
+Then u will have a ClassCastException because POJO needs to find ordering.
+
+Question: Can Abstract class have consturctors
+        Abstract classes can and do have constructors. Even if you don't write one, Java inserts a default "no-arg" constructor automatically.
+
+Question: why do the Abstract classes have constructors
+        so if there is a common attribute shared across all of the children,
+        better to have a constructor in abstract class for that attr and use super(attr) in children's constructor
+
+Question: why people choose Interface over Abstract classes sometimes when Abstract classes provides flexibility in object creation and abstraction(0-100%)
+        because interface will be simple and does the job if purely abstract methods are needed
+
+Question: if u have an interface, but due to business requirements u want to convert to Abstract class what should be done
+        Solution1 - Code Refactor
+        Solution2 - If Interface is used by other teams, they need to change their code and we cant do that and they cant do it immedieatley
+            so, use Adapter Pattern in that case. where Abstract Class acts as a Adapter to Interface
+
+Question: In Singleton Pattern why is an instance not final
+        All Final Variables are required to be initializted during declaration, so if instance is fetched in runtime, it cant be final.
