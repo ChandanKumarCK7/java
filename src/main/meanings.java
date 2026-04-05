@@ -361,3 +361,16 @@ Question: if u have an interface, but due to business requirements u want to con
 
 Question: In Singleton Pattern why is an instance not final
         All Final Variables are required to be initializted during declaration, so if instance is fetched in runtime, it cant be final.
+
+Q: Why do you need a custom exception class if you can just throw new Exception()?
+A: Because the type of Exception itself carries the meaning. With custom exceptions, callers catch by type and react as needed. if  Exception(message) thrown, you're parsing message strings in caller to figure out what went wrong — fragile and messy.
+
+Q: Why does AppException call super(message) if it's just passing it up?
+A: Because Throwable is where getMessage() actually lives. Every super() call in the chain just passes the message up until Throwable stores it in detailMessage. All logging, debugging, and framework tooling reads from there automatically.
+
+Q: What is the difference between checked and unchecked exceptions?
+A: Checked — compiler knows it might fail and forces you to handle it(ex - FileNotFOundException, SQLException, ClassNotFoundException).
+Unchecked — compiler can't predict it, fails at runtime, you deal with it then.(ex - ArrayIndexOutOFBoundsException, NullPointerException)
+
+Q: Is a custom exception class checked or unchecked?
+A: Depends on what it extends. Extends Exception directly = checked. Extends RuntimeException = unchecked. Nothing to do with whether it's built-in or custom.
